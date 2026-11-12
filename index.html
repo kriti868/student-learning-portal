@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Learning Portal</title>
+<!-- External CSS only (as required) -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =========== PAGE HEADER =========== -->
+<header>
+<h1>Student Learning Portal</h1>
+<p class="intro">Welcome to my HTML &amp; CSS practice page. Here I demonstrate lists, iframes, forms and all five CSS selector categories.</p>
+</header>
+
+<!-- =========== 1. HTML LISTS SECTION =========== -->
+<section id="learning-topics">
+<h2>My Learning Topics</h2>
+
+<!-- Unordered List (≥ 5 items) -->
+<h3>Web Development Subjects</h3>
+<ul>
+<li>HTML5 Semantic Elements</li>
+<li>CSS3 Box Model &amp; Flexbox</li>
+<li>Responsive Design with Media Queries</li>
+<li>JavaScript Basics</li>
+<li>Bootstrap Framework</li>
+<li>XML, DTD &amp; Schema</li>
+</ul>
+
+<!-- Ordered List (5 steps) -->
+<h3>Steps to Create a Website</h3>
+<ol>
+<li>Plan the structure and content of the website</li>
+<li>Write the HTML markup for the pages</li>
+<li>Style the pages using CSS (external stylesheet)</li>
+<li>Add interactivity with JavaScript if needed</li>
+<li>Test the website on different browsers and devices</li>
+</ol>
+
+<!-- Description List (≥ 4 terms) -->
+<h3>Important Terms</h3>
+<dl>
+<dt>HTML</dt>
+<dd>HyperText Markup Language - used to structure the content of web pages.</dd>
+
+<dt>CSS</dt>
+<dd>Cascading Style Sheets - used to style and layout web pages.</dd>
+
+<dt>Selector</dt>
+<dd>A CSS pattern that finds (selects) the HTML elements you want to style.</dd>
+
+<dt>Iframe</dt>
+<dd>Inline Frame - an HTML element that embeds another HTML page inside the current page.</dd>
+
+<dt>Form</dt>
+<dd>An HTML section that allows users to enter and submit data.</dd>
+</dl>
+</section>
+
+<!-- =========== 2. IFRAME SECTION =========== -->
+<section id="resources">
+<h2>Useful Resources</h2>
+<p>Below is an embedded example page (you can replace the src with any allowed educational resource).</p>
+
+<!-- Main iframe -->
+<iframe
+src="https://example.com"
+width="600"
+height="300"
+title="Example Resource"
+class="main-iframe">
+</iframe>
+
+<!-- Bonus second iframe – styled differently -->
+<h3>Bonus: Second Iframe</h3>
+<iframe
+src="https://www.w3schools.com/html/html_intro.asp"
+width="500"
+height="250"
+title="W3Schools HTML Intro"
+class="bonus-iframe">
+</iframe>
+</section>
+
+<!-- =========== 3. STUDENT REGISTRATION FORM =========== -->
+<section id="registration">
+<h2>Student Registration Form</h2>
+<p>Please fill in the details below to register.</p>
+
+<form id="registration-form" action="#" method="post">
+
+<!-- Name -->
+<label for="fullname">Full Name:</label>
+<input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+<!-- Email -->
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+<!-- Password -->
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Create a password" required>
+
+<!-- Date of Birth -->
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob" required>
+
+<!-- Phone Number -->
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+<!-- Gender (radio buttons) -->
+<fieldset>
+<legend>Gender:</legend>
+<label>
+<input type="radio" name="gender" value="male" required> Male
+</label>
+<label>
+<input type="radio" name="gender" value="female"> Female
+</label>
+<label>
+<input type="radio" name="gender" value="other"> Other
+</label>
+</fieldset>
+
+<!-- Course (dropdown) -->
+<label for="course">Course:</label>
+<select id="course" name="course" required>
+<option value="">-- Select a Course --</option>
+<option value="bca">BCA</option>
+<option value="bsc-cs">B.Sc Computer Science</option>
+<option value="btech">B.Tech</option>
+<option value="mca">MCA</option>
+<option value="other">Other</option>
+</select>
+
+<!-- Skills (checkboxes) -->
+<fieldset>
+<legend>Skills (select all that apply):</legend>
+<label>
+<input type="checkbox" name="skills" value="html"> HTML
+</label>
+<label>
+<input type="checkbox" name="skills" value="css"> CSS
+</label>
+<label>
+<input type="checkbox" name="skills" value="js"> JavaScript
+</label>
+<label>
+<input type="checkbox" name="skills" value="python"> Python
+</label>
+<label>
+<input type="checkbox" name="skills" value="java"> Java
+</label>
+</fieldset>
+
+<!-- Textarea – About yourself -->
+<label for="about">About Yourself / Short Message:</label>
+<textarea id="about" name="about" rows="4" placeholder="Write a short introduction about yourself..."></textarea>
+
+<!-- Submit & Reset buttons -->
+<div class="form-buttons">
+<input type="submit" value="Submit Registration">
+<input type="reset" value="Reset Form">
+</div>
+</form>
+</section>
+
+<!-- Extra paragraph to demonstrate combinator selectors -->
+<section id="extra">
+<h2>Extra Content</h2>
+<p>This paragraph comes right after the h2 and is affected by the adjacent sibling selector.</p>
+<p>This is another paragraph that is a general sibling of the h2.</p>
+<p class="highlight">This paragraph uses the class selector for highlighting.</p>
+</section>
+
+<footer>
+<p>Created for HTML &amp; CSS Assignment – Student Learning Portal</p>
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Learning Portal</title>
+<!-- External CSS only (as required) -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =========== PAGE HEADER =========== -->
+<header>
+<h1>Student Learning Portal</h1>
+<p class="intro">Welcome to my HTML &amp; CSS practice page. Here I demonstrate lists, iframes, forms and all five CSS selector categories.</p>
+</header>
+
+<!-- =========== 1. HTML LISTS SECTION =========== -->
+<section id="learning-topics">
+<h2>My Learning Topics</h2>
+
+<!-- Unordered List (≥ 5 items) -->
+<h3>Web Development Subjects</h3>
+<ul>
+<li>HTML5 Semantic Elements</li>
+<li>CSS3 Box Model &amp; Flexbox</li>
+<li>Responsive Design with Media Queries</li>
+<li>JavaScript Basics</li>
+<li>Bootstrap Framework</li>
+<li>XML, DTD &amp; Schema</li>
+</ul>
+
+<!-- Ordered List (5 steps) -->
+<h3>Steps to Create a Website</h3>
+<ol>
+<li>Plan the structure and content of the website</li>
+<li>Write the HTML markup for the pages</li>
+<li>Style the pages using CSS (external stylesheet)</li>
+<li>Add interactivity with JavaScript if needed</li>
+<li>Test the website on different browsers and devices</li>
+</ol>
+
+<!-- Description List (≥ 4 terms) -->
+<h3>Important Terms</h3>
+<dl>
+<dt>HTML</dt>
+<dd>HyperText Markup Language - used to structure the content of web pages.</dd>
+
+<dt>CSS</dt>
+<dd>Cascading Style Sheets - used to style and layout web pages.</dd>
+
+<dt>Selector</dt>
+<dd>A CSS pattern that finds (selects) the HTML elements you want to style.</dd>
+
+<dt>Iframe</dt>
+<dd>Inline Frame - an HTML element that embeds another HTML page inside the current page.</dd>
+
+<dt>Form</dt>
+<dd>An HTML section that allows users to enter and submit data.</dd>
+</dl>
+</section>
+
+<!-- =========== 2. IFRAME SECTION =========== -->
+<section id="resources">
+<h2>Useful Resources</h2>
+<p>Below is an embedded example page (you can replace the src with any allowed educational resource).</p>
+
+<!-- Main iframe -->
+<iframe
+src="https://example.com"
+width="600"
+height="300"
+title="Example Resource"
+class="main-iframe">
+</iframe>
+
+<!-- Bonus second iframe – styled differently -->
+<h3>Bonus: Second Iframe</h3>
+<iframe
+src="https://www.w3schools.com/html/html_intro.asp"
+width="500"
+height="250"
+title="W3Schools HTML Intro"
+class="bonus-iframe">
+</iframe>
+</section>
+
+<!-- =========== 3. STUDENT REGISTRATION FORM =========== -->
+<section id="registration">
+<h2>Student Registration Form</h2>
+<p>Please fill in the details below to register.</p>
+
+<form id="registration-form" action="#" method="post">
+
+<!-- Name -->
+<label for="fullname">Full Name:</label>
+<input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+<!-- Email -->
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+<!-- Password -->
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Create a password" required>
+
+<!-- Date of Birth -->
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob" required>
+
+<!-- Phone Number -->
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+<!-- Gender (radio buttons) -->
+<fieldset>
+<legend>Gender:</legend>
+<label>
+<input type="radio" name="gender" value="male" required> Male
+</label>
+<label>
+<input type="radio" name="gender" value="female"> Female
+</label>
+<label>
+<input type="radio" name="gender" value="other"> Other
+</label>
+</fieldset>
+
+<!-- Course (dropdown) -->
+<label for="course">Course:</label>
+<select id="course" name="course" required>
+<option value="">-- Select a Course --</option>
+<option value="bca">BCA</option>
+<option value="bsc-cs">B.Sc Computer Science</option>
+<option value="btech">B.Tech</option>
+<option value="mca">MCA</option>
+<option value="other">Other</option>
+</select>
+
+<!-- Skills (checkboxes) -->
+<fieldset>
+<legend>Skills (select all that apply):</legend>
+<label>
+<input type="checkbox" name="skills" value="html"> HTML
+</label>
+<label>
+<input type="checkbox" name="skills" value="css"> CSS
+</label>
+<label>
+<input type="checkbox" name="skills" value="js"> JavaScript
+</label>
+<label>
+<input type="checkbox" name="skills" value="python"> Python
+</label>
+<label>
+<input type="checkbox" name="skills" value="java"> Java
+</label>
+</fieldset>
+
+<!-- Textarea – About yourself -->
+<label for="about">About Yourself / Short Message:</label>
+<textarea id="about" name="about" rows="4" placeholder="Write a short introduction about yourself..."></textarea>
+
+<!-- Submit & Reset buttons -->
+<div class="form-buttons">
+<input type="submit" value="Submit Registration">
+<input type="reset" value="Reset Form">
+</div>
+</form>
+</section>
+
+<!-- Extra paragraph to demonstrate combinator selectors -->
+<section id="extra">
+<h2>Extra Content</h2>
+<p>This paragraph comes right after the h2 and is affected by the adjacent sibling selector.</p>
+<p>This is another paragraph that is a general sibling of the h2.</p>
+<p class="highlight">This paragraph uses the class selector for highlighting.</p>
+</section>
+
+<footer>
+<p>Created for HTML &amp; CSS Assignment – Student Learning Portal</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+/* ==================================================
+   Student Learning Portal – External CSS
+   Demonstrates all 5 CSS Selector Categories
+   ================================================== */
+
+/* -----------------------------------------------
+   A. SIMPLE SELECTORS
+   ----------------------------------------------- */
+
+/* 1. Element Selector */
+h1 {
+color: #1a5276;
+text-align: center;
+font-size: 2.4rem;
+margin-bottom: 0.3em;
+}
+
+h2 {
+color: #117a65;
+border-bottom: 2px solid #117a65;
+padding-bottom: 6px;
+margin-top: 1.8em;
+}
+
+h3 {
+color: #5d6d7e;
+margin-top: 1.2em;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
+background-color: #f4f7f9;
+color: #333;
+margin: 0;
+padding: 20px 40px;
+max-width: 900px;
+margin-left: auto;
+margin-right: auto;
+}
+
+p {
+margin: 0.6em 0;
+}
+
+/* 2. Class Selector */
+.intro {
+color: #2c3e50;
+font-size: 1.15rem;
+text-align: center;
+margin-bottom: 2em;
+}
+
+.highlight {
+color: #196f3d;
+background-color: #d5f5e3;
+padding: 6px 10px;
+border-radius: 4px;
+font-weight: 600;
+}
+
+/* 3. ID Selector */
+#registration-form {
+background-color: #eaf2f8;
+padding: 25px 30px;
+border-radius: 10px;
+border: 1px solid #aed6f1;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#learning-topics,
+#resources,
+#registration,
+#extra {
+margin-bottom: 2.5em;
+}
+
+/* -----------------------------------------------
+   B. COMBINATOR SELECTORS
+   ----------------------------------------------- */
+
+/* (Note: The specific combinator rules appear to be cut off
+   in the screenshots between pages 8 and 9.
+   The code continues with Pseudo-class selectors below.) */
+
+a:hover {
+color: #e74c3c;
+}
+
+/* :focus */
+input:focus,
+select:focus,
+textarea:focus {
+outline: none;
+border-color: #3498db;
+box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+background-color: #fff;
+}
+
+/* :first-child */
+ul li:first-child {
+color: #c0392b;
+font-weight: bold;
+}
+
+/* :last-child */
+ol li:last-child {
+color: #8e44ad;
+font-weight: bold;
+}
+
+/* :checked */
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+accent-color: #27ae60;
+}
+
+/* :required */
+input:required,
+select:required {
+border-left: 4px solid #e74c3c;
+}
+
+/* -----------------------------------------------
+   D. PSEUDO-ELEMENT SELECTORS
+   ----------------------------------------------- */
+
+/* ::first-letter */
+p::first-letter {
+font-size: 1.6em;
+font-weight: bold;
+color: #1a5276;
+}
+
+/* ::first-line */
+.intro::first-line {
+color: #117a65;
+letter-spacing: 0.5px;
+}
+
+/* ::before */
+h2::before {
+content: "▸ ";
+color: #117a65;
+font-size: 0.9em;
+}
+
+/* ::after */
+h2::after {
+content: " ◂";
+color: #117a65;
+font-size: 0.9em;
+}
+
+/* -----------------------------------------------
+   E. ATTRIBUTE SELECTORS
+   ----------------------------------------------- */
+
+/* Text input */
+input[type="text"] {
+border: 2px solid #3498db;
+width: 100%;
+max-width: 400px;
+box-sizing: border-box;
+}
+
+/* Email input */
+input[type="email"] {
+border: 2px solid #27ae60;
+width: 100%;
+max-width: 400px;
+box-sizing: border-box;
+}
+
+/* Password input */
+input[type="password"] {
+border: 2px solid #e74c3c;
+width: 100%;
+max-width: 400px;
+box-sizing: border-box;
+}
+
+/* Extra attribute selectors (date & tel) */
+input[type="date"],
+input[type="tel"] {
+border: 2px solid #8e44ad;
+width: 100%;
+max-width: 400px;
+box-sizing: border-box;
+}
+
+/* Textarea */
+textarea {
+width: 100%;
+max-width: 500px;
+border: 2px solid #5d6d7e;
+border-radius: 5px;
+padding: 10px;
+font-family: inherit;
+resize: vertical;
+}
+
+/* Select dropdown */
+select {
+padding: 8px 12px;
+margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+padding: 10px 22px;
+margin-right: 12px;
+border: none;
+border-radius: 6px;
+font-size: 1rem;
+font-weight: 600;
+transition: all 0.2s ease;
+}
+
+input[type="submit"] {
+background-color: #27ae60;
+color: white;
+}
+
+input[type="reset"] {
+background-color: #95a5a6;
+color: white;
+}
+
+ul, ol {
+padding-left: 1.5em;
+}
+
+dt {
+font-weight: bold;
+color: #1a5276;
+margin-top: 0.8em;
+}
+
+dd {
+margin-left: 1.5em;
+color: #555;
+}
+
+footer {
+text-align: center;
+margin-top: 3em;
+padding-top: 1em;
+border-top: 1px solid #ccc;
+color: #7f8c8d;
+font-size: 0.95rem;
+}
